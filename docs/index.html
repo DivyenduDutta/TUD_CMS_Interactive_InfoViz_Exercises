@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Information Visualization - Assignment 3</title>
+    <!-- Loading D3.js version 7.8.4-->
+    <script src="/libs/d3-7.8.4.min.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    
+    <!-- the lens is simulated with an svg circle --> 
+    <svg class="cy" width="10000" height="10000">
+      <circle 
+        id="lens" 
+        class="cy" 
+        cx="50" 
+        cy="50" 
+        r="40" 
+        stroke="red" 
+        stroke-width="1" 
+        fill="none" 
+      />
+    </svg>
+    
+    <!-- cytoscape draws the graph in this div -->
+    <div class="cy" id="cy"></div>
+    
+    
+    <div id="config" class="config">
+      <label>Lens Radius</label>
+      <input id="lens-radius-config" type="range"
+             min="30" max="150" step="1" value="40"></input> <br/><br/><br/>
+      <label for="lens-func-type">Select Lens Functionality</label><br/>
+      <select id="lens-func-type">
+        <option value="node-alter">Node Alteration</option>
+        <option value="node-alter-adv">Node Alter Advanced</option>
+        <option value="edge-highlight">Edge Highlight</option>
+      </select><br/><br/><br/>
+      <div id="color-desc"></div>
+    </div>
+    
+  </body>
+
+  <!-- dependencies -->
+  <script src="/libs/cytoscape-3.24.0.js"></script>
+  <script src="/libs/cola-3.3.8.js"></script>
+  <script src="/libs/cyto-cola-2.2.3.js"></script>
+
+  <!-- the magic goes in these files! -->
+  <script src="/style.js" type="module"></script>
+  <script src="/script.js" type="module"></script>
+</html>
