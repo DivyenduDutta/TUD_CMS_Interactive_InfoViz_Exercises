@@ -1,0 +1,48 @@
+body {
+    height: 100%;
+    /*background-color: #39918C;*/
+}
+
+#container{
+    margin-left: 15px;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+/*to display cursor on the ticks of the scale*/
+.tick text{
+    cursor: move;
+}
+
+.color-encoding-dropdown {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+#attribute-selection-root{
+  display: flex;  
+}
+
+.attribute-selection-dropdown {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 15px;
+  padding-right: 15px;
+}
+
+.popup-desc {
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  background-color: #fadab7;
+  padding: 5px;
+  border: 1px solid #f984e3;
+}

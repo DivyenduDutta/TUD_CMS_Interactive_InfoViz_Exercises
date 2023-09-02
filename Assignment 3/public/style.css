@@ -1,0 +1,27 @@
+/* If you need to make some style changes to the plain html, this is the place! */
+
+body{
+  background-color: #B0AFB5;
+}
+
+.cy {
+  /* aligns the svg with the canvas */
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 12em; 
+}
+
+.config {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 11em;
+  background: rgba(0, 0, 0, 0.666);
+  padding: 1em;
+  color: #ffffff;
+  z-index: 1;
+}
+
