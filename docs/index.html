@@ -1,52 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Information Visualization - Assignment 3</title>
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive InfoVis - Assignment 2</title>
+    
     <!-- Loading D3.js version 7.8.4-->
-    <script src="/libs/d3-7.8.4.min.js"></script>
-    <link rel="stylesheet" href="/style.css" />
-  </head>
-  <body>
+    <script src="https://divyendudutta.github.io/TUD_CMS_Interactive_InfoViz_Exercisesd3-7.8.4.min.js"></script>
     
-    <!-- the lens is simulated with an svg circle --> 
-    <svg class="cy" width="10000" height="10000">
-      <circle 
-        id="lens" 
-        class="cy" 
-        cx="50" 
-        cy="50" 
-        r="40" 
-        stroke="red" 
-        stroke-width="1" 
-        fill="none" 
-      />
-    </svg>
-    
-    <!-- cytoscape draws the graph in this div -->
-    <div class="cy" id="cy"></div>
-    
-    
-    <div id="config" class="config">
-      <label>Lens Radius</label>
-      <input id="lens-radius-config" type="range"
-             min="30" max="150" step="1" value="40"></input> <br/><br/><br/>
-      <label for="lens-func-type">Select Lens Functionality</label><br/>
-      <select id="lens-func-type">
-        <option value="node-alter">Node Alteration</option>
-        <option value="node-alter-adv">Node Alter Advanced</option>
-        <option value="edge-highlight">Edge Highlight</option>
-      </select><br/><br/><br/>
-      <div id="color-desc"></div>
-    </div>
-    
-  </body>
+    <!-- Loading Bootstrap CSS -->
+    <link rel="stylesheet" href="https://divyendudutta.github.io/TUD_CMS_Interactive_InfoViz_Exercisesbootstrap-5.3.0-alpha3.min.css">
 
-  <!-- dependencies -->
-  <script src="/libs/cytoscape-3.24.0.js"></script>
-  <script src="/libs/cola-3.3.8.js"></script>
-  <script src="/libs/cyto-cola-2.2.3.js"></script>
+    <!-- Loading CSS styles; use if needed -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-  <!-- the magic goes in these files! -->
-  <script src="/style.js" type="module"></script>
-  <script src="/script.js" type="module"></script>
+<body>
+    <div class="center"><b>Interactive InfoVis Assignment 2: Parallel Coordinates Plot</b><div id="desc-popup"></div></div>
+    <div id="color-encoding-container"></div>        
+    <div id="container"></div>
+    <div id="attribute-selection-container"></div>        
+    
+    <!-- Loading Bootstrap js version 5.3.0 -->
+    <script src="https://divyendudutta.github.io/TUD_CMS_Interactive_InfoViz_Exercisesbootstrap-5.3.0-alpha3.bundle.min.js"></script>
+
+    <!-- loading the main javascript file; implement logic there -->
+    <script src="https://divyendudutta.github.io/TUD_CMS_Interactive_InfoViz_Exercises/main.js"></script>
+</body>
 </html>

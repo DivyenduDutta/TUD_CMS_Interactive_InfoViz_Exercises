@@ -1,27 +1,48 @@
-/* If you need to make some style changes to the plain html, this is the place! */
-
-body{
-  background-color: #B0AFB5;
+body {
+    height: 100%;
+    /*background-color: #39918C;*/
 }
 
-.cy {
-  /* aligns the svg with the canvas */
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 12em; 
+#container{
+    margin-left: 15px;
 }
 
-.config {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 11em;
-  background: rgba(0, 0, 0, 0.666);
-  padding: 1em;
-  color: #ffffff;
-  z-index: 1;
+.center {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+/*to display cursor on the ticks of the scale*/
+.tick text{
+    cursor: move;
 }
 
+.color-encoding-dropdown {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+#attribute-selection-root{
+  display: flex;  
+}
+
+.attribute-selection-dropdown {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 15px;
+  padding-right: 15px;
+}
+
+.popup-desc {
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  background-color: #fadab7;
+  padding: 5px;
+  border: 1px solid #f984e3;
+}
